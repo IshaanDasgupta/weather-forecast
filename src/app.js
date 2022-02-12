@@ -68,13 +68,6 @@ app.get('/weather' , (req,res) => {
             })
         })
     })
-
-    
-    // res.send({
-    //     forecast : "Well i dont the actual forecast but i can tell this for sure that its just not your time brother",
-    //     location : "Wherever the fuck you live... how am i supposed to know that ask yourself and if you cant even answere that go and see a fucking doctor...",
-    //     currlocation : req.query.location
-    // });
 })
 
 app.get('/help/*' , (req,res) => {
