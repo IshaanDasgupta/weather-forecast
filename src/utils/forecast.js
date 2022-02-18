@@ -12,7 +12,11 @@ const forecast = (lati,longi,callback) => {
         else{
             callback(undefined,{
                 time : response.body.current.observation_time,
+                feelsLike : response.body.current.feelslike,
                 temp : response.body.current.temperature,
+                desc : response.body.current.weather_descriptions[0],
+                humidity : response.body.current.humidity,
+                weatherIcon : response.body.current.weather_icons[0]
             })
         }
     })

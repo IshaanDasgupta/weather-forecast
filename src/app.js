@@ -22,7 +22,7 @@ hbs.registerPartials(partiaslPath);
 
 app.get('' , (req,res) => {
     res.render('index' , {
-        title : "Weather Forecast",
+        title : "Weather Application",
         name : "Ishaan Dasgupta"
 
     });
@@ -30,7 +30,7 @@ app.get('' , (req,res) => {
 
 app.get('/about' , (req,res) => {
     res.render('about' , {
-        title:"About",
+        title:"About Me",
         name : "Ishaan Dasgupta"
     })
 })
@@ -55,7 +55,7 @@ app.get('/weather' , (req,res) => {
                 error
             })
         }
-        forecast(latitude,longitude,(error,{time,temp} = {})=>{
+        forecast(latitude,longitude,(error,{time,feelsLike,temp,desc,humidity,weatherIcon} = {})=>{
             if (error){
                 return res.send({
                     error
@@ -64,20 +64,15 @@ app.get('/weather' , (req,res) => {
             res.send({
                 time,
                 temp,
-                locationName
+                locationName,
+                feelsLike,
+                desc,
+                humidity,
+                weatherIcon
             })
         })
     })
 })
-
-app.get('/help/*' , (req,res) => {
-    res.render('error' , {
-        title : "Error 404",
-        name : "Ishaan",
-        message : "Help Article Not Found"
-    })
-})
-
 
 app.get('*' , (req,res) => {
     res.render('error' , {

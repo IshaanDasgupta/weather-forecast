@@ -7,18 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="main-flex">
-        <div class="main">
-            {{>header}}
-            <h6>Need Help ??..... Just get gud kid</h6>
+    <div class="content-flex">
+        {{>navigation}}
+        <div class="main-flex">
+            <div class="main">
+                <h1>{{title}}</h1>
+                <h6>Location not found / Wrong Location</h6>
+                <p>If you are getting "Location not found" as the output or the weather details displayed are for the wrong location , please specify your location a bit more like adding the state or the country name seperated by spaces to make it more precise.</p>
+                <h6>Forecast not found</h6>
+                <p>If you are getting "Forecast not found" as the output, I are sorry but the weather api doesn't have the data for the entered location.</p>
+            </div>
+            {{>footer}}
         </div>
-        {{>footer}}
     </div>
-
 </body>
 
 </html>

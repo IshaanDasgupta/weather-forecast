@@ -1,8 +1,8 @@
 body {
-  color: #333;
+  color: #0f2d53;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 10vh 20vw;
+  font-family: "Quicksand", sans-serif;
+  background-color: #ffffff;
 }
 
 h1 {
@@ -24,15 +24,15 @@ a {
 }
 
 footer {
-  color: #888888;
-  border-top: 1px solid #dbdbdb;
+  color: #0f2d53;
+  border-top: 1px solid #0f2d53;
 }
 
 .main-flex {
   display: flex;
   flex-direction: column;
-  min-height: 80vh;
-  justify-content: space-between;
+  min-height: 50vh;
+  padding: 5vh 10vh 0 10vh;
 }
 
 .main {
@@ -49,7 +49,7 @@ footer {
 }
 
 .col2 {
-  width: 42vw;
+  flex-grow: 1;
 }
 
 .col2 h6 {
@@ -57,24 +57,69 @@ footer {
 }
 
 .about img {
-  width: 10rem;
+  width: 12rem;
   border-radius: 100%;
-  margin: auto;
+  margin: auto 3rem auto 0;
 }
 
 input {
-  border: 1px solid #cccccc;
+  color: #0f2d53;
+  border: 1px solid #0f2d53;
   padding: 1rem;
 }
 
 button {
   cursor: pointer;
-  border: 1px solid #888888;
-  background: #888888a1;
+  color: #0f2d53;
+  border: 1px solid #0f2d53;
+  background: #ffffff;
   padding: 1rem;
   transition: all 0.5s;
 }
 
 button:hover {
-  background: #888888;
+  color: #ffffff;
+  background: #0f2d53;
+}
+
+.content-flex {
+  display: flex;
+}
+
+.navigation {
+  background-color: #0f2d53;
+  min-width: 20vw;
+  min-height: 90vh;
+  padding: 5vh 0;
+  text-align: center;
+}
+
+.navigation a {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 0;
+}
+
+.navigation li {
+  text-align: center;
+  margin-bottom: 2rem;
+  list-style-type: none;
+  border-bottom: 1px solid #ebf4ff7c;
+  padding-bottom: 1rem;
+}
+
+ul {
+  padding: 0 3rem 2rem 3rem;
+}
+
+.navigation img {
+  width: 20vw;
+  margin-bottom: 2rem;
+}
+
+#message-1 {
+  font-size: 1.8rem;
+  font-weight: 900;
 }

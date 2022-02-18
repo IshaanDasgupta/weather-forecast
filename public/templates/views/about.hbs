@@ -7,25 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-    <div class="main-flex">
-        <div class="main">
-             {{>header}}
-            <div class="about">
-                <img class="col1" src="../../img/profile.png" alt="">
-                <div class="col2">
-                    <h6 >About Us...</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, quam deleniti minima eveniet error totam beatae doloribus molestiae sequi aliquid repellat, suscipit tempora possimus, officiis odit rerum? Magni beatae est nemo ab repellendus, vitae impedit assumenda repellat. Voluptatum quis, ducimus nisi aliquid dolorum illum adipisci, qui similique illo iste aperiam.</p>
+    <div class="content-flex">
+        {{>navigation}}
+        <div class="main-flex">
+            <div class="main">
+                <h1>{{title}}</h1>
+                <div class="about">
+                    <img class="col1" src="../../img/profile.png" alt="">
+                    <div class="col2">
+                        <h6 >Hello there...</h6>
+                        <p>I am Ishaan Dasgupta, currently persuing B.Tech in computer science from SGSITS indore. I am quite interested in competitive coding and have been looking into web-development.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div>
-           {{>footer}}
+            <div>
+            {{>footer}}
+            </div>
         </div>
     </div>
 </body>
+
 
 </html>
