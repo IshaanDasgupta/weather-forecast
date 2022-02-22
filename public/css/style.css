@@ -158,11 +158,15 @@ ul {
     padding: 0;
   }
   h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
   .about img {
     width: 20vw;
     border-radius: 100%;
     margin: auto 3rem auto 0;
+  }
+
+  .main-flex {
+    padding: 5vh 5vh 0 5vh;
   }
 }
