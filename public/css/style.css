@@ -103,7 +103,6 @@ button:hover {
 }
 
 .navigation li {
-  text-align: center;
   margin-bottom: 2rem;
   list-style-type: none;
   border-bottom: 1px solid #ebf4ff7c;
@@ -114,12 +113,56 @@ ul {
   padding: 0 3rem 2rem 3rem;
 }
 
-.navigation img {
+.desktop-logo {
   width: 20vw;
   margin-bottom: 2rem;
+}
+
+.mobile-logo {
+  display: none;
 }
 
 #message-1 {
   font-size: 1.8rem;
   font-weight: 900;
+}
+
+@media screen and (max-width: 1142px) {
+  .content-flex {
+    flex-direction: column;
+  }
+  .navigation ul {
+    display: none;
+    overflow: hidden;
+  }
+  .navigation {
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+  }
+  .desktop-logo {
+    display: none;
+  }
+  .mobile-logo {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5vw 0 5vw;
+  }
+  .mobile-logo img {
+    height: 13vh;
+  }
+  .mobile-logo i {
+    color: #ffffff;
+    margin: auto;
+    margin-right: 5vw;
+    padding: 0;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  .about img {
+    width: 20vw;
+    border-radius: 100%;
+    margin: auto 3rem auto 0;
+  }
 }
