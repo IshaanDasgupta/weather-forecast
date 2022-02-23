@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WeatherNow</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4eaf49172f.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/x-icon" href="../../img/favicon.ico">
 </head>
 <body>
     <div class="content-flex">
@@ -21,6 +22,7 @@
                 <p>The front-end for this application was created using HTML, CSS, and javascript, while the back-end was created using a weather API of Weatherstack, a forward geocoding API of Mapbox as well as node.js to run the API calls on the server-side.</p>
                 <p>A brief description of the functionality :</p>
                 <p>Every time a location is submitted, the app fetches a query URL.When this query is received by the server, it performs forward geocoding (conversion of the name of the location to its latitude and longitude coordinates) and gathers weather data using API, it then returns the relevant data. This data is then displayed on the web page using client-side javascript</p>
+                <p>If you don't get the desired location just add the state or country separated by spaces like "Indore Madhya Pradesh India"</p>
                 <form action="">
                     <input placeholder="Enter Location" type="text">
                     <button>Submit</button>
